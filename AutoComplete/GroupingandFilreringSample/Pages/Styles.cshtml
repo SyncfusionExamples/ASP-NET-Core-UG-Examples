@@ -1,0 +1,29 @@
+﻿@page
+@model GroupingandFilreringSample.Pages.StylesModel
+@{
+	var data = new string[] { "Badminton", "Basketball", "Cricket", "Football", "Golf", "Gymnastics", "Hockey", "Tennis" };    
+}
+
+<div class="control_wrapper AutoComplete-control-section">
+	<ejs-autocomplete id="games" dataSource="data" placeholder="e.g. Basketball" popupWidth="300px" popupHeight="220px">
+	</ejs-autocomplete>
+</div>
+
+<style>
+	.e-ddl.e-input-group.e-control-wrapper .e-input {
+    font-size: 20px;
+    font-family: emoji;
+    color: #ab3243;
+    background: #32a5ab;
+}
+
+.e-ddl.e-input-group .e-input-group-icon,.e-ddl.e-input-group.e-control-wrapper .e-input-group-icon:hover {
+    color: #bb233d;
+    font-size: 13px;
+}
+
+.e-dropdownbase .e-list-item.e-item-focus, .e-dropdownbase .e-list-item.e-active, .e-dropdownbase .e-list-item.e-active.e-hover, .e-dropdownbase .e-list-item.e-hover {
+    background-color: #1f9c99;
+    color: #2319b8;
+}
+</style>
