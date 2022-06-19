@@ -1,0 +1,12 @@
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+
+namespace AutoCompleteCustomSample.Pages
+{
+    public class FilterwithTextandValueFieldModel : PageModel
+    {
+        public void OnGet()
+        {
+        }
+    }
+}
