@@ -1,0 +1,12 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    var minDate= new DateTime(DateTime.Now.Year,DateTime.Now.Month,07);
+    var maxDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 27);
+    var value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 14);
+}
+
+<div class="text-center">
+    <ejs-calendar id="calendar" value="value" min="minDate" max="maxDate"></ejs-calendar>
+</div>
