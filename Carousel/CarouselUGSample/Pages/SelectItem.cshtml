@@ -1,0 +1,46 @@
+﻿@page
+@model CarouselUGSample.Pages.SelectItemModel
+@{
+}
+<ejs-button id="prev" cssClass="e-info" content="Prev"></ejs-button>
+<ejs-button id="next" cssClass="e-info" content="Next"></ejs-button>
+
+<div class="container">
+    <div class="control-container">
+        <ejs-carousel id="defaultCarousel">
+            <e-carousel-items>
+                <e-carousel-item template='<div class="slide-content">Slide 1</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 2</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 3</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 4</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 5</div>'></e-carousel-item>
+            </e-carousel-items>
+        </ejs-carousel>
+    </div>
+</div>
+<script>
+    document.getElementById('prev').onclick = function () {
+        var carouselObj = document.querySelector(".e-carousel").ej2_instances[0];
+        carouselObj.prev();
+    }
+    document.getElementById('next').onclick = function () {
+        var carouselObj = document.querySelector(".e-carousel").ej2_instances[0];
+        carouselObj.next();
+    }
+</script>
+<style>
+    .control-container {
+        background-color: #adb5bd;
+        height: 300px;
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    .e-carousel .slide-content {
+        align-items: center;
+        display: flex;
+        font-size: 1.25rem;
+        height: 100%;
+        justify-content: center;
+    }
+</style>

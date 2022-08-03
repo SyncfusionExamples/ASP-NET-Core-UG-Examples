@@ -1,0 +1,17 @@
+﻿@page
+@using Syncfusion.EJ2.CircularGauge;
+@model AxesUGSample.Pages.LabelsModel
+@{
+    var font = new CircularGaugeFont
+    {
+        Color = "red"
+    };
+}
+<ejs-circulargauge id="circular">
+    <e-circulargauge-axes>
+        <e-circulargauge-axis>
+            <e-axis-labelstyle font="font">
+            </e-axis-labelstyle>
+        </e-circulargauge-axis>
+    </e-circulargauge-axes>
+</ejs-circulargauge>

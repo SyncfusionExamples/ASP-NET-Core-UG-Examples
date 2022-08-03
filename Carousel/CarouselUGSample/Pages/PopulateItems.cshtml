@@ -1,0 +1,52 @@
+﻿@page
+@model CarouselUGSample.Pages.PopulateItemsModel
+@{
+    List<CarouselDataBinding> datasrc = new List<CarouselDataBinding>();
+    datasrc.Add(new CarouselDataBinding
+    {
+        Id = 1,
+        Title = "Slide 1",
+    });
+    datasrc.Add(new CarouselDataBinding
+    {
+        Id = 2,
+        Title = "Slide 2",
+    });
+    datasrc.Add(new CarouselDataBinding
+    {
+        Id = 3,
+        Title = "Slide 3",
+    });
+    datasrc.Add(new CarouselDataBinding
+    {
+        Id = 4,
+        Title = "Slide 4",
+    });
+    datasrc.Add(new CarouselDataBinding
+    {
+        Id = 5,
+        Title = "Slide 5",
+    });
+}
+<div class="container">
+    <div class="control-container">
+        <ejs-carousel id="defaultCarousel" dataSource="@datasrc" itemTemplate='<div class="slide-content">${Title}</div>'>
+        </ejs-carousel>
+    </div>
+</div>
+<style>
+    .control-container {
+        background-color: #adb5bd;
+        height: 300px;
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    .e-carousel .slide-content {
+        align-items: center;
+        display: flex;
+        font-size: 1.25rem;
+        height: 100%;
+        justify-content: center;
+    }
+</style>
