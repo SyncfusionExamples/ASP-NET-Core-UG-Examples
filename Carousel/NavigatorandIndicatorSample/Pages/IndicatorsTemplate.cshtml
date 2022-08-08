@@ -1,0 +1,47 @@
+﻿@page
+@model NavigatorandIndicatorSample.Pages.IndicatorsTemplateModel
+@{
+}
+<div class="container">
+    <div class="control-container">
+        <ejs-carousel id="carousel" indicatorsTemplate="<div class='indicator' indicator-index='${index}'></div>">
+            <e-carousel-items>
+                <e-carousel-item template='<div class="slide-content">Slide 1</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 2</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 3</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 4</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 5</div>'></e-carousel-item>
+            </e-carousel-items>
+        </ejs-carousel>
+    </div>
+</div>
+
+<style>
+    .control-container {
+        background-color: #adb5bd;
+        height: 300px;
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    .e-carousel .slide-content {
+        align-items: center;
+        display: flex;
+        font-size: 1.25rem;
+        height: 100%;
+        justify-content: center;
+    }
+
+    .e-carousel .e-carousel-indicators .e-indicator-bars .e-indicator-bar.e-template .indicator {
+        background-color: #ececec;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        height: 0.5rem;
+        margin: 0.5rem;
+        width: 1.5rem;
+    }
+
+    .e-carousel .e-carousel-indicators .e-indicator-bars .e-indicator-bar.e-active .indicator {
+        background-color: #3c78ef;
+    }
+</style>

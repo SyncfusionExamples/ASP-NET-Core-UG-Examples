@@ -1,0 +1,41 @@
+﻿@page
+@model NavigatorandIndicatorSample.Pages.NavigatorButtonTemplateModel
+@{
+}
+<div class="container">
+    <div class="control-container">
+        <ejs-carousel id="carousel" previousButtonTemplate='<button id="previous"></button>' nextButtonTemplate='<button id="next"></button>'>
+            <e-carousel-items>
+                <e-carousel-item template='<div class="slide-content">Slide 1</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 2</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 3</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 4</div>'></e-carousel-item>
+                <e-carousel-item template='<div class="slide-content">Slide 5</div>'></e-carousel-item>
+            </e-carousel-items>
+        </ejs-carousel>
+    </div>
+</div>
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        var prevBtn = new ej.buttons.Button({ cssClass: 'e-flat e-round', iconCss: 'e-icons e-chevron-left-double' });
+        prevBtn.appendTo('#previous');
+        var nextBtn = new ej.buttons.Button({ cssClass: 'e-flat e-round', iconCss: 'e-icons e-chevron-right-double' });
+        nextBtn.appendTo('#next');
+    });
+</script>
+<style>
+    .control-container {
+        background-color: #adb5bd;
+        height: 300px;
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    .e-carousel .slide-content {
+        align-items: center;
+        display: flex;
+        font-size: 1.25rem;
+        height: 100%;
+        justify-content: center;
+    }
+</style>
