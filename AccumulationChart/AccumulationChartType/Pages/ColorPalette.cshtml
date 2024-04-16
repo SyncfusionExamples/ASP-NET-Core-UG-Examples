@@ -1,4 +1,4 @@
-﻿@* @page
+﻿@page
 @using static AccumulationChartType.Pages.ColorPaletteModel
 @model AccumulationChartType.Pages.ColorPaletteModel
 @{
@@ -12,13 +12,14 @@
         new PieChartData { xValue = "Opera", yValue = 11 },
         new PieChartData { xValue = "Android", yValue = 12 },
     };
+    var palette = new string[] { "teal", "skyblue", "green", "red"};
 }
 
 <ejs-accumulationchart id="container" enableBorderOnMouseMove="false">
     <e-accumulationchart-legendsettings visible="false">
     </e-accumulationchart-legendsettings>
     <e-accumulation-series-collection>
-        <e-accumulation-series dataSource="chartData" xName="xValue" yName="yValue" name="Browser" palettes="['teal', 'skyblue', 'green', 'red']">
+        <e-accumulation-series dataSource="chartData" xName="xValue" yName="yValue" name="Browser" palettes="palette">
         </e-accumulation-series>
     </e-accumulation-series-collection>
-</ejs-accumulationchart> *@
+</ejs-accumulationchart>

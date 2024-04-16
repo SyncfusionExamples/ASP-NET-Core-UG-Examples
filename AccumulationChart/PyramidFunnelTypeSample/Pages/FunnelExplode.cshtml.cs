@@ -1,14 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace AccumulationChartType.Pages
+namespace PyramidFunnelTypeSample.Pages
 {
-    public class ColorPaletteModel : PageModel
+    public class FunnelExplodeModel : PageModel
     {
         public void OnGet()
         {
         }
-        public class PieChartData
+        public class FunnelChartData
         {
             public string xValue;
             public double yValue;
