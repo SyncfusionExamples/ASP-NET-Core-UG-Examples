@@ -1,5 +1,4 @@
 var builder = WebApplication.CreateBuilder(args);
-Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Mgo+DSMBMAY9C3t2UFhhQlJBfVtdX2NWfFN0QXNcdV91flBBcC0sT3RfQFljTX9WdkBgW3tfcnVQRA==");
 // Add services to the container.
 builder.Services.AddRazorPages();
 
