@@ -1,0 +1,18 @@
+@page
+@model BulletChartSamples.Pages.Customization
+
+@{
+    var color = "blue";
+    List<FillColorCustomization> bulletData = new List<FillColorCustomization>
+    {
+        new FillColorCustomization { value = 55, target = 75 }     
+    };
+}
+
+<ejs-bulletchart id="bulletgraph" title="Sales Rate" valueFill="@color" valueHeight="15" minimum="0" maximum="100" interval="20" valueField="value" dataSource="bulletData">
+    <e-bullet-range-collection>
+        <e-bullet-range end="35"></e-bullet-range>
+        <e-bullet-range end="50"></e-bullet-range>
+        <e-bullet-range end="100"></e-bullet-range>
+    </e-bullet-range-collection>
+</ejs-bulletchart>

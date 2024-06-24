@@ -1,0 +1,17 @@
+@page
+@model BulletChartSamples.Pages.Theme
+
+@{
+    List<Themes> bulletData = new List<Themes>
+    {
+        new Themes { value = 55, target = 75}     
+    };
+}
+
+<ejs-bulletchart id="bulletgraph" theme="HighContrast" title="Sales Rate in dollars" subtitle="(in dollars $)" labelFormat="${value}" minimum="0" maximum="100" interval="20" targetField="target" valueField="value" dataSource="bulletData">
+<e-bullet-range-collection>
+    <e-bullet-range end="35"></e-bullet-range>
+    <e-bullet-range end="50"></e-bullet-range>
+    <e-bullet-range end="100"></e-bullet-range>
+</e-bullet-range-collection>
+</ejs-bulletchart>
