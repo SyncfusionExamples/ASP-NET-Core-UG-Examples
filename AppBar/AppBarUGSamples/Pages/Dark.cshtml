@@ -1,0 +1,18 @@
+﻿@page
+@model AppBarUGSamples.Pages.DarkModel
+@{
+}
+
+<ejs-appbar id="defaultAppBar" colorMode="Dark">
+    <e-content-template>
+        <ejs-button id="defaultButtonMenu" cssClass="e-inherit" iconCss="e-icons e-menu"></ejs-button>
+        <div class="e-appbar-spacer"></div>
+        <ejs-button id="defaultButtonLogin" cssClass="e-inherit" content="FREE TRIAL"></ejs-button>
+    </e-content-template>
+</ejs-appbar>
+
+<style>
+    #defaultAppBar .e-btn.e-inherit {
+        margin: 0 3px;
+    }
+</style>

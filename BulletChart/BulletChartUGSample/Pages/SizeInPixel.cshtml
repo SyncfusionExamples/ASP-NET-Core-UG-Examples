@@ -1,0 +1,17 @@
+@page
+@model BulletChartUGSample.Pages.SizeInPixel
+
+@{
+    List<BulletData> bulletData = new List<BulletData>
+    {
+        new BulletData { value = 270, target = 250}     
+    };
+}
+
+<ejs-bulletchart id="bulletgraph" width="600px" height="100px" minimum="0" maximum="300" interval="50" valueField="value" targetField="target" dataSource="bulletData">
+    <e-bullet-range-collection>
+        <e-bullet-range end="150"></e-bullet-range>
+        <e-bullet-range end="250"></e-bullet-range>
+        <e-bullet-range end="300"></e-bullet-range>
+    </e-bullet-range-collection>
+</ejs-bulletchart>
